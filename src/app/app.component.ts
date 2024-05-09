@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'assignment';
+
+  public isLightTheme = true;
+
+  onThemeSwitchChange() {
+    this.isLightTheme = !this.isLightTheme;
+
+    document.body.setAttribute(
+      'data-theme',
+      this.isLightTheme ? 'light' : 'dark'
+    );
+
+  }
 }
