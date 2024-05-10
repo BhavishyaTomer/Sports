@@ -1,4 +1,6 @@
+<div   [ngClass]="{'dark': (darkmode.darkModeSignal | async) === 'dark'}">
 <app-navbar></app-navbar>
 <router-outlet>
    
 </router-outlet>
+</div>

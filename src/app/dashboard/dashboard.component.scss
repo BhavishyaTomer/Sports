@@ -1,74 +1,70 @@
 * {
-    align-items: center;
-    /* background: black; */
-  }
-  
-  .navbar .nav-items ul {
-    gap: 20px;
-    color: white;
-  }
-  
-  .navbar .nav-items ul li a {
-    color: white;
-  }
-  
-  .nav-container {
-    background: #151669;
-  }
-  
-  .home-component {
-    height: 100vh;
-    background-color: black;
-  }
-  .text-center{
-    overflow: hidden;
-  }
-  
-  .home-component h1 {
-    display: table-caption;
-    background: linear-gradient(to right, rgba(243, 57, 6, 0) 0%, rgba(250, 7, 7, 0) 61%), linear-gradient(rgb(238, 19, 19) 52%, rgb(239, 88, 18) 60%, rgb(234, 212, 23) 61%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline;
-    width: 10vw;
-    z-index: 0;
-  }
-  
-  .container-fluid.home-component {
-    position: relative;
-  }
-  
+  align-items: center;
+}
+
+.navbar .nav-items ul {
+  gap: 20px;
+  color: white;
+}
+
+.navbar .nav-items ul li a {
+  color: white;
+}
+
+.nav-container {
+  background: #151669;
+}
+
+.home-component {
+  height: 100vh;
+  background-color: black;
+}
+
+.text-center {
+  overflow: hidden;
+}
+
+.dark {
+  background-color: white;
+}
+
+.home-component h1 {
+  display: table-caption;
+  background: linear-gradient(to right, rgba(243, 57, 6, 0) 0%, rgba(250, 7, 7, 0) 61%), linear-gradient(rgb(238, 19, 19) 52%, rgb(239, 88, 18) 60%, rgb(234, 212, 23) 61%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline;
+  width: 10vw;
+  z-index: 0;
+}
+
+.container-fluid.home-component {
+  position: relative;
+}
+
+.container-fluid.home-component h1 {
+  font-size: 40vw;
+  position: relative;
+}
+
+.container-fluid.home-component img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 999999;
+}
+
+@media (max-width: 768px) {
   .container-fluid.home-component h1 {
-    font-size: 40vw;
-    position: relative;
- 
-    /* Increased z-index for the text */
+    font-size: 30vw;
   }
-  
   .container-fluid.home-component img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20rem;
-    transform: translate(-50%, -50%);
-   
-    z-index: 999999;
-    // mix-blend-mode: exclusion
+    width: 40%;
+    max-width: 150px;
+    max-height: 150px;
+    opacity: 1.5;
+    z-index: 1;
   }
-  
-  @media (max-width: 768px) {
-    .container-fluid.home-component h1 {
-      font-size: 30vw;
-    }
-    .container-fluid.home-component img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      max-width: 100%;
-      max-height: 100%;
-      opacity: 1.5;
-   
-      z-index: 1;
-    }
-  }
+}

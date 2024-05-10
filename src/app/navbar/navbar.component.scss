@@ -1,13 +1,30 @@
 .navbar{
     background-color: #141568 !important;
-}
-.nav-link{
     color: white !important;
+
+    .nav-link{
+        color: white;
+    }
+    img{
+        color: white !important;
+    }
 }
-img{
-    color: white !important;
+.toggle{
+    cursor: pointer;
 }
+
 
 button{
     background-color: white !important;
+}
+
+.dark{
+    background-color: rgb(234, 218, 218) !important;
+    color: #141568 !important;
+    .nav-link{
+        color:  #141568 !important;
+    }
+    img{
+        color:  #141568 !important;
+    }
 }

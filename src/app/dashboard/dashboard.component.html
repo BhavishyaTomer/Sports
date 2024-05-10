@@ -1,12 +1,12 @@
 
 
-<div class="container-fluid home-component bg-dark">
+<div class="container-fluid home-component " [ngClass]="{'dark': darkmode.darkModeSignal.value === 'dark'}">
     <div class="row">
-      <div class="col-12 text-center">
+      <div class="col-12 text-center textholder">
         <h1>
           D<span>O</span>G
         </h1>
-        <img src="../../assets/dogs.png" alt="">
+        <img src="../../assets/doggy.png" alt="">
       </div>
     </div>
   </div>

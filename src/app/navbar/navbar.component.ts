@@ -1,6 +1,7 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 import { OverlayContainer } from '@angular/cdk/overlay'
+import { DarkmodeService } from '../service/darkmode.service';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,25 +9,16 @@ import { OverlayContainer } from '@angular/cdk/overlay'
 })
 export class NavbarComponent implements OnInit {
  
-  constructor(private overlay :OverlayContainer){
+  constructor(public darkmode: DarkmodeService) { }
 
+  toggleMode() {
+    this.darkmode.updateDarkMode();
   }
-  switchTheme=new FormControl(false)
-  @HostBinding('class') className=''
-  darkClass="theme-dark"
-  lightClass="theme-light"
+
 
 
   ngOnInit() {
-    this.switchTheme.valueChanges.subscribe((data)=>{
-      this.className=data?this.darkClass:this.lightClass
+  
 
-      if (data) {
-        document.body.classList.add('theme-dark');
-      } else {
-        document.body.classList.remove('theme-light');
-      }
-    })
-  }
-
+}
 }
