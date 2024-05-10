@@ -20,6 +20,9 @@
     height: 100vh;
     background-color: black;
   }
+  .text-center{
+    overflow: hidden;
+  }
   
   .home-component h1 {
     display: table-caption;
@@ -28,7 +31,7 @@
     -webkit-text-fill-color: transparent;
     display: inline;
     width: 10vw;
-    z-index: 1;
+    z-index: 0;
   }
   
   .container-fluid.home-component {
